@@ -18,7 +18,7 @@ docs = text_splitter.split_documents(data)
 # # print(docs)
 
 
-GOOGLE_API_KEY = "AIzaSyAT8SR1HP4HDjZYDAwfur6qW1ppOEGkpSM"
+GOOGLE_API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 vectorstore = Chroma.from_documents(documents=docs, embedding=GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY))
